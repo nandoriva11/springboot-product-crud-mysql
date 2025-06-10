@@ -1,4 +1,4 @@
-package com.example.TiendaOnline.Producto;
+package com.example.TiendaOnline.model;
 
 import jakarta.persistence.*;
 
