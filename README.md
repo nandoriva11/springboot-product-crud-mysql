@@ -34,13 +34,13 @@ Este proyecto es una API RESTful para gestionar productos en una tienda online. 
 
 ## 🧪 Ejemplo de JSON para POST
 
-```json
 {
   "id": 1,            // Solo requerido para PUT
   "nombre": "Mouse Logitech M720",
   "precio": 49.99
 }
-🧪 Pruebas unitarias
+
+##🧪 Pruebas unitarias
 Se incluyen pruebas unitarias en ProductoServiceImplTest.java para:
 - Obtener todos los productos
 - Guardar un producto
