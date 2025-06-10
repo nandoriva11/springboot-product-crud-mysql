@@ -42,7 +42,7 @@ Este proyecto es una API RESTful para gestionar productos en una tienda online. 
 }
 ``` 
 
-##🧪 Pruebas unitarias
+🧪 Pruebas unitarias
 Se incluyen pruebas unitarias en ProductoServiceImplTest.java para:
 - Obtener todos los productos
 - Guardar un producto
