@@ -34,8 +34,9 @@ Este proyecto es una API RESTful para gestionar productos en una tienda online. 
 
 ## 🧪 Ejemplo de JSON para POST
 
+```json
 {
-  "id": 1,            // Solo requerido para PUT
+  "id": 1,            
   "nombre": "Mouse Logitech M720",
   "precio": 49.99
 }
