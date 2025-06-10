@@ -48,6 +48,7 @@ Se incluyen pruebas unitarias en ProductoServiceImplTest.java para:
 - Guardar un producto
 - Verificar existencia por ID
 - Eliminar un producto
+  
 ✅ Cobertura total:
 - ProductoServiceImpl: 100% métodos cubiertos, 100% líneas cubiertas
 
