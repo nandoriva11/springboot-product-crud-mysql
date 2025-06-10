@@ -10,6 +10,8 @@ Este proyecto es una API RESTful para gestionar productos en una tienda online. 
 - Spring Data JPA
 - MySQL Driver
 - Maven
+- JUnit 5
+- Mockito
 - Postman (para pruebas)
 
 ## 📦 Funcionalidades
@@ -17,8 +19,9 @@ Este proyecto es una API RESTful para gestionar productos en una tienda online. 
 - Listar todos los productos
 - Crear un nuevo producto
 - Actualizar un producto existente
-- Eliminar un producto
+- Eliminar un producto por ID
 - Validar nombre duplicado en creación
+- Pruebas unitarias del servicio
 
 ## 🔧 Endpoints
 
@@ -29,7 +32,7 @@ Este proyecto es una API RESTful para gestionar productos en una tienda online. 
 | PUT    | /api/v1/productos        | Actualizar un producto        |
 | DELETE | /api/v1/productos/{id}   | Eliminar un producto por ID   |
 
-## 🧪 Ejemplo de JSON para POST y PUT
+## 🧪 Ejemplo de JSON para POST
 
 ```json
 {
@@ -37,3 +40,14 @@ Este proyecto es una API RESTful para gestionar productos en una tienda online. 
   "nombre": "Mouse Logitech M720",
   "precio": 49.99
 }
+🧪 Pruebas unitarias
+Se incluyen pruebas unitarias en ProductoServiceImplTest.java para:
+- Obtener todos los productos
+- Guardar un producto
+- Verificar existencia por ID
+- Eliminar un producto
+✅ Cobertura total:
+- ProductoServiceImpl: 100% métodos cubiertos, 100% líneas cubiertas
+
+
+
