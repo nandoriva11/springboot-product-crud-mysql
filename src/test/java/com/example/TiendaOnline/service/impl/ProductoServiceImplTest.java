@@ -43,6 +43,20 @@ class ProductoServiceImplTest {
     }
 
     @Test
+    void getProductoPorNombre() {
+        String nombre = "Mouse";
+        Producto producto = new Producto("Mouse", 100.0f, LocalDate.now());
+
+        when(productoRepository.findProductoByNombre(nombre)).thenReturn(Optional.of(producto));
+        Optional<Producto> resultado = productoService.getProductoPorNombre(nombre);
+
+        assertTrue(resultado.isPresent());
+        assertEquals("Mouse", resultado.get().getNombre());
+
+        verify(productoRepository, times(1)).findProductoByNombre(nombre);
+    }
+
+    @Test
     void guardarProducto() {
         Producto producto = new Producto("Monitor", 100.0f, LocalDate.now());
         when(productoRepository.save(producto)).thenReturn(producto);
